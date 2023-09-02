@@ -1,0 +1,34 @@
+cc = circle(r=130,fill='brown',stroke='yellow',stroke_width=3)
+c = circle(r=120,fill='brown',stroke='green',stroke_width=3)
+color = 'white'
+c1 = rectangle(w=141.4,h=141.4,fill="white",stroke='none')
+c1 = c1 | rotate(45) | repeat(4,rotate(22.5))
+
+size = 120
+c2 = rectangle(w=size,h=size,fill='yellow',stroke='none')
+c2 = c2 | repeat(4,rotate(22.5))
+c2 = c2 | rotate(11.25)
+
+size = 100
+c3 = rectangle(w=size,h=size,fill='orange',stroke='none')
+c3 = c3 | repeat(4,rotate(22.5))
+
+size = 80
+c4 = rectangle(w=size,h=size,fill='green',stroke='none')
+c4 = c4 | repeat(4,rotate(22.5))
+c4 = c4 | rotate(11.25)
+
+c5 = circle(r=46,fill='red',stroke='none')
+
+size = 60
+c6 = rectangle(w=size,h=size,fill='pink',stroke='none')
+c6 = c6 | repeat(3,rotate(30))
+
+size = 45
+c7 = rectangle(w=size,h=size,fill='white',stroke='none')
+c7 = c7 | repeat(3,rotate(30))
+
+c8 = circle(r=20,fill='orange',stroke='none')
+c9 = circle(r=15,fill='purple',stroke='none')
+
+show(c,cc,c1,c2,c3,c4,c5,c6,c7,c8,c9)
